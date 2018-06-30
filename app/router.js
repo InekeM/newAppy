@@ -7,6 +7,14 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('clans', function() {
+    this.route('new');
+    this.route('edit');
+  });
+  this.route('players');
+  this.route('proudclans');
+  this.route('about');
+  this.route('contact');
 });
 
 export default Router;

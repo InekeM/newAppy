@@ -4,6 +4,20 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'playerdatabase',
     environment,
+    firebase: {
+      apiKey: "AIzaSyBPwUDgZl-ZCxswhRo2uvskZP2Zy5bpRpY",
+      authDomain: "playerdatabase-87232.firebaseapp.com",
+      databaseURL: "https://playerdatabase-87232.firebaseio.com",
+      projectId: "playerdatabase-87232",
+      storageBucket: "playerdatabase-87232.appspot.com",
+      messagingSenderId: "401409085794"
+    },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+    
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

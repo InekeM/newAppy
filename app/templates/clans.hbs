@@ -1,0 +1,11 @@
+{{outlet}}
+<h1>Clans</h1>
+{{#each model as |clan|}}
+{{clan.tag}}
+	<div class="well">
+		<h4>{{#link-to 'clans.edit' clan.id}}{{clan.tag}}{{/link-to}}</h4>
+		<small>Date Added: {{moment-format clan.date 'LLL'}}</small>
+		<p>{{clan.adderName}}</p>
+		<button {{action 'deleteClan' clan.id}} class="btn btn-danger">Delete</button>
+	</div>
+{{/each}}
