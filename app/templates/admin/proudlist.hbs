@@ -1,0 +1,22 @@
+<h1>Proud List</h1>
+
+<table class="table table-striped table-hover table-condensed table-dark">
+  <thead>
+    <tr>
+      <th>Clan tag</th>
+      <th>Clan name</th>
+      <th>Date joined</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |proudclan|}}
+    <tr>
+      <th>{{proudclan.clanTag}}</th>
+      <td>{{proudclan.clanName}}</td>
+      <td>{{moment-format proudclan.dateJoined 'YYYY-MM-DD'}}</td>
+      <td><button {{action 'deleteClan' clan.id}} class="btn btn-default">Delete</button></td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

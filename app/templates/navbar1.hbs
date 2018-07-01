@@ -1,0 +1,23 @@
+{{#bs-navbar type="dark" backgroundColor="dark" collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
+        <div class="navbar-header">
+          {{navbar.toggle}} 
+          {{#link-to "clans" class="navbar-brand"}}<a class="navbar-brand" href="#">
+            <img alt="Brand" src="/assets/images/FWA Logo White.png" alt="FWA Logo" height="42" width="62">
+          </a>{{/link-to}}
+          
+        </div>
+          {{#navbar.content}} 
+          {{#navbar.nav as |nav|}} 
+                
+          {{#nav.item}}{{#nav.link-to 'clans'}}Clans{{/nav.link-to}} {{/nav.item}} 
+          {{#nav.item}}{{#nav.link-to 'clans.new'}}New Clan{{/nav.link-to}}{{/nav.item}}
+          {{#nav.dropdown as |dd|}} {{#dd.toggle}}Dropdown
+        <span class="caret"></span>{{/dd.toggle}} {{#dd.menu as |ddm|}} {{#ddm.item}}{{#ddm.link-to "clans"}}Home{{/ddm.link-to}}{{/ddm.item}}
+        {{#ddm.item}}{{#ddm.link-to "clans"}}Navbars{{/ddm.link-to}}{{/ddm.item}} {{/dd.menu}} 
+        {{/nav.dropdown}} 
+        {{/navbar.nav}}
+        {{/navbar.content}} 
+        {{/bs-navbar}}
+
+
+<!-- /.container -->

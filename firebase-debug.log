@@ -1,0 +1,55 @@
+[debug] [2018-07-01T11:46:42.610Z] ----------------------------------------------------------------------
+[debug] [2018-07-01T11:46:42.615Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ineke\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-01T11:46:42.616Z] CLI Version:   3.19.1
+[debug] [2018-07-01T11:46:42.616Z] Platform:      win32
+[debug] [2018-07-01T11:46:42.616Z] Node Version:  v8.11.3
+[debug] [2018-07-01T11:46:42.618Z] Time:          Sun Jul 01 2018 13:46:42 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:46:42.618Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-01T11:46:42.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-01T11:46:42.640Z] > authorizing via signed-in user
+[debug] [2018-07-01T11:46:42.644Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-01T11:46:42.645Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/g3_775vazvBtHt2qLXrfvD3Rn7yEblrzWrU-CXhFNTY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jul 01 2018 13:46:42 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:46:42.902Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-01T11:46:43.000Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/playerdatabase-87232  
+  
+ Sun Jul 01 2018 13:46:43 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:46:43.684Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-01T11:46:43.685Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/playerdatabase-87232/tokens  
+  
+ Sun Jul 01 2018 13:46:43 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:46:44.366Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'playerdatabase-87232'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-07-01T11:56:36.338Z] ----------------------------------------------------------------------
+[debug] [2018-07-01T11:56:36.354Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ineke\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-01T11:56:36.354Z] CLI Version:   3.19.1
+[debug] [2018-07-01T11:56:36.354Z] Platform:      win32
+[debug] [2018-07-01T11:56:36.354Z] Node Version:  v8.11.3
+[debug] [2018-07-01T11:56:36.354Z] Time:          Sun Jul 01 2018 13:56:36 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:56:36.354Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-01T11:56:36.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-01T11:56:36.369Z] > authorizing via signed-in user
+[debug] [2018-07-01T11:56:36.369Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/playerdatabase-87232  
+  
+ Sun Jul 01 2018 13:56:36 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:56:37.082Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-01T11:56:37.082Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/playerdatabase-87232/tokens  
+  
+ Sun Jul 01 2018 13:56:37 GMT+0200 (West-Europa (zomertijd))
+[debug] [2018-07-01T11:56:37.676Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'playerdatabase-87232'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
